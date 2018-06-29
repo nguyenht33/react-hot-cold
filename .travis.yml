@@ -6,7 +6,7 @@ cache:
 env:
 - CI=true
 deploy:
+  provider: heroku
+  app: warm-oasis-56489
   api_key:
-    provider: heroku
-    app: warm-oasis-56489
     secure: BOX16RO4ZZ2FMLwFAzfzQJVaIoSwvfh6jxh+/sl0fHiIYNayYIbMOyV8b/s+WqIcCOGNppkYKBYHvQh+hYMnsIE/7vvpHhq+cXisOGRNVLra7pmzI467S4oDx4/nVEaJKjk3SuL3BWq+nh5MnntQ3ZilAZdhY4CYVUk6fNiVm6ryH9THm49QgD/mAGw0Dzrt6G74VwzxvXwLBKTN+o5mp5088xPX4XeVihYFjPODKJoIg2nthMMbJ83BExzCKEmEereUaQKUdC+PDC0CX1Z56tTShMyBxxaGT9UORUB2iVp9W3yXeb3t50t9RM2Ig8GXgGK6roZ0ZPiuiYqd33NmjWt9R+JsdKEMDTjPn7rVL4LWkd2AuLDyBMsppOo53t7Hw1xUdqK+q21n/Ra4Oy6Vb06dijiT5/Wh20u18CLGdl6LBtESlnPWanGB/R5f0vuyaPf3HM3Pzi3a3hRNN6s+9OaADiCeGlz2OHiRTGqAFtGB97eswO43dByXPFMYBBQCPbwWIK2N24Hg0OuUsnQbZOjrV1cMjw3CmMJqFA7i9GfQ/5hw0Weumt5E6P8w004SyYzsYy4vVCHJpm/y8l4PIhFnkZlLvd0JJNF4VNs4cWOa2pJ7wC7lxCa+yzR3H0Vfv6+k1M686AexrjrBvHx/4a4yd11UAdI985jFXU23Ay8=
