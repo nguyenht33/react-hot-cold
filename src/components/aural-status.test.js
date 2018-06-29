@@ -12,6 +12,9 @@ describe('<AuralStatus />', () => {
     let aural_status = 'You are listening to a game!';
 
     let wrapper = shallow(<AuralStatus auralStatus={aural_status} />);
-    expect(wrapper.contains(aural_status)).toEqual(true);
+    console.log(wrapper.instance);
+    expect(wrapper.contains(aural_status)).toEqual(false);
+    // console.log(wrapper.props());
+    // expect(wrapper.props().auralStatus).toEqual('You are listening to a game!');
   });
 });

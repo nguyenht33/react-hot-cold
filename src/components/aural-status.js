@@ -7,6 +7,7 @@ export default function AuralStatus(props) {
       className="visuallyhidden"
       aria-live="assertive"
       aria-atomic="true"
+      auralStatus={props.auralStatus}
     >
       {props.auralStatus}
     </p>
