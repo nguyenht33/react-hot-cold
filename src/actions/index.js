@@ -1,17 +1,16 @@
 export const RESTART_GAME = 'RESTART_GAME';
-export const restartGame = () => ({
+export const restartGame = correctAnswer => ({
   type: RESTART_GAME,
+  correctAnswer
 })
 
 export const MAKE_GUESS = 'MAKE_GUESS';
-export const makeGuess = (feedback, guesses)=> ({
+export const makeGuess = guess => ({
   type: MAKE_GUESS,
-  feedback,
-  guesses
+  guess
 })
 
 export const GENERATE_AURAL_UPDATE = 'GENERATE_AURAL_UPDATE';
-export const generateAuralUpdate = auralStatus => ({
+export const generateAuralUpdate = () => ({
   type: GENERATE_AURAL_UPDATE,
-  auralStatus
 })

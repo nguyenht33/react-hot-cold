@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import Feedback from './feedback.js';
+import {Feedback} from './feedback.js';
 
 describe('<Feedback />', () => {
     it('Renders without crashing', () => {

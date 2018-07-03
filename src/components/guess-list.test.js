@@ -1,20 +1,19 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import GuessList from './guess-list.js';
+import {GuessList} from './guess-list.js';
 
 describe('<GuessList/>', () => {
     it('Renders without crashing', () => {
-        const guesses = [3, 5, 6]
-        shallow(<GuessList guesses={guesses} />);
+        shallow(<GuessList guesses={[]} />);
     });
 
     it('Renders without crashing', () => {
-        const test_guesses = [3, 5, 6]
-        const wrapper = shallow(<GuessList guesses={test_guesses} />);
+        const values = [3, 5, 6]
+        const wrapper = shallow(<GuessList guesses={values} />);
         const items = wrapper.find('li');
-        expect(items.length).toEqual(test_guesses.length);
-        test_guesses.forEach((guess, index) => {
+        expect(items.length).toEqual(values.length);
+        values.forEach((guess, index) => {
           expect(items.at(index).text()).toEqual(guess.toString());
       });
     });

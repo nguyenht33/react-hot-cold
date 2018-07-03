@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import GuessCount from './guess-count.js';
+import {GuessCount} from './guess-count.js';
 
 describe('<GuessCount />', () => {
     it('Renders without crashing', () => {
